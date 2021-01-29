@@ -1,0 +1,128 @@
+import React from "react";
+import { useQuery } from "@apollo/client";
+import { GET_ROOM } from "../../api/query";
+import { Link } from "react-router-dom";
+
+const SearchRoom = () => {
+  return (
+    <div className="container">
+      <div className="sc-hb-rooms-search style-01">
+        <div className="hotel-booking-search style-01">
+          <form action="rooms-search.html" className="hb-search-form">
+            <ul className="hb-form-table">
+              <li>
+                <input
+                  type="text"
+                  id="multidate"
+                  className="multidate"
+                  defaultValue
+                  data-date-min={6}
+                />
+              </li>
+              <li className="hb-form-field hb-form-check-in">
+                <div className="label">Date d'arrivée</div>
+                <div className="hb-form-field-input hb_input_field">
+                  <input
+                    type="text"
+                    id="day"
+                    className="day"
+                    defaultValue="5."
+                    style={{
+                      width: "68px",
+                    }}
+                  />
+                  <input
+                    id="month"
+                    className="month"
+                    type="text"
+                    defaultValue="Nov. 2020"
+                  />
+                  <input
+                    type="hidden"
+                    name="check_in_date"
+                    id="check_in_date"
+                    className="check-date hasDatepicker"
+                    defaultValue
+                  />
+                </div>
+              </li>
+              <li className="hb-form-field hb-form-check-out">
+                <div className="label">Date de départ</div>
+                <div className="hb-form-field-input hb_input_field">
+                  <input
+                    type="text"
+                    id="day2"
+                    className="day"
+                    defaultValue="10"
+                    style={{
+                      width: "83px",
+                    }}
+                  />
+                  <input
+                    id="month2"
+                    className="month"
+                    type="text"
+                    defaultValue="Nov. 2020"
+                  />
+                  <input
+                    type="hidden"
+                    name="check_out_date"
+                    id="check_out_date"
+                    className="check-date hasDatepicker"
+                    defaultValue
+                  />
+                </div>
+              </li>
+              <li className="hb-form-field hb-form-number">
+                <div className="label">Nombre</div>
+                <div id="guests" className="hb-form-field-input hb_input_field">
+                  <input
+                    type="text"
+                    id="number"
+                    className="day"
+                    defaultValue={"01"}
+                  />
+                  <input className="month" type="text" defaultValue="pers" />
+                </div>
+                <div className="hb-form-field-list">
+                  <div className="hb-form-field-input hb-guest-field">
+                    <select
+                      name="adults_capacity"
+                      tabIndex={-1}
+                      aria-hidden="true"
+                    >
+                      <option value={47}>1</option>
+                      <option value={45}>2</option>
+                      <option value={56}>3</option>
+                      <option value={57}>4</option>
+                      <option value={58}>5</option>
+                      <option value={59}>6</option>
+                      <option value={60}>7</option>
+                      <option value={61}>8</option>
+                      <option value={62}>9</option>
+                    </select>
+                    <span className="name">Invité(s)</span>
+                    <span className="number-icons goUp">
+                      <i className="ion-plus" />
+                    </span>
+                    <span className="number-icons goDown">
+                      <i className="ion-minus" />
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p className="hb-submit">
+              <span className="contact-info">
+                Ou appelez: <span>(+225) 05-222-222</span>
+              </span>
+              <button type="submit">Verifier la disponibilité</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SearchRoom;

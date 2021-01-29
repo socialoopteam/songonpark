@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+.loader-div {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-event {
+    margin: 10px;
+    max-width: auto;
+    word-wrap: break-word;
+}
+
+.card-event:hover {
+    box-shadow: 0 1px 5px white;
+    -moz-box-shadow: 0 1px 5px white;
+    -webkit-box-shadow: 0 1px 5px white;
+}
+
+.card-col {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.error-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.card-option {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* .card-img{
+  width: 168px;
+  height: 168px;
+  border: 1px solid black;
+  border-radius: 50%;
+} */
+
+.circular {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.circular img {
+    width: auto;
+    height: 100%;
+    margin-left: -40px;
+}
+
+.items-card {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    position: relative;
+    background-color: #636e72;
+    color: #ffffff;
+    box-shadow: 0 1px 3px whitesmoke;
+  -moz-box-shadow: 0 1px 2px whitesmoke;
+  -webkit-box-shadow: 0 1px 3px whitesmoke;
+    width: auto;
+    /* word-break: break-all; */
+    /* border-bottom-right-radius: 22px; */
+}
+
+.card-sign {
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 15px;
+    width: 15px;
+}
+
+.items-details {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.items-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.items-icon {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 15px;
+}

@@ -1,0 +1,7 @@
+.caption_text {
+white-space: nowrap;
+z-index: 5;
+font-size: 64rem;
+font-weight: 400rem;
+color: rgba(255,255,255,1);
+}
